@@ -77,3 +77,8 @@ $ /opt/mapr/spark/spark-1.6.1/bin/spark-submit \
     target/SparkConsumer-1.0-SNAPSHOT.jar
 ```
 
+# Reference
+
+About MapR Streams - https://www.mapr.com/products/mapr-streams
+
+Integrating Streams with Spark - http://maprdocs.mapr.com/51/#Spark/Spark_IntegrateMapRStreams_Consume.html
