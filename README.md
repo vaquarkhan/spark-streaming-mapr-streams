@@ -84,3 +84,5 @@ $ /opt/mapr/spark/spark-1.6.1/bin/spark-submit \
 About MapR Streams - https://www.mapr.com/products/mapr-streams
 
 Integrating Streams with Spark - http://maprdocs.mapr.com/51/#Spark/Spark_IntegrateMapRStreams_Consume.html
+
+JavaDirectKafkaWordCount example - https://github.com/apache/spark/blob/master/examples/src/main/java/org/apache/spark/examples/streaming/JavaDirectKafkaWordCount.java
