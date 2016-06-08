@@ -51,6 +51,10 @@ public final class SparkConsumer {
     Set<String> topicsSet = new HashSet<>(Arrays.asList(topics.split(",")));
     Map<String, String> kafkaParams = new HashMap<>();
     kafkaParams.put("metadata.broker.list", brokers);
+    kafkaParams.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+    kafkaParams.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
+    kafkaParams.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+    kafkaParams.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 
     // Create direct kafka stream with brokers and topics
     JavaPairInputDStream<String, String> messages = KafkaUtils.createDirectStream(
